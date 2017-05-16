@@ -1,0 +1,28 @@
+name: Blog Search
+description: Blog Search Particle for Grav SimpleSearch plugin
+type: particle
+icon: fa-search
+
+dependencies:
+  platform:
+    grav:
+      plugin:
+        simplesearch: true
+
+form:
+  fields:
+    enabled:
+      type: checkbox
+      label: Enabled
+      description: Globally enable blog search particles.
+      default: true
+
+    blog_root:
+      type: input.text
+      size: medium
+      label: Blog Root
+      default: 'blog'
+      help: Enter the blog page for the site.
+      description: Enter the blog page for the site.
+      validate:
+          type: text
